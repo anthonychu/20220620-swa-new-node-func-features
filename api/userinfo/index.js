@@ -1,6 +1,10 @@
 module.exports = async function (context, req) {
   const userInfo = req.user;
 
+  if (!userInfo) {
+    return;
+  }
+
   // access basic information
   const { id, username, identityProvider } = userInfo;
   context.log(`id: ${id}`);
