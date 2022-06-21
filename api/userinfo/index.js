@@ -11,7 +11,7 @@ module.exports = async function (context, req) {
   context.log('username:', username);
   context.log('identityProvider:', identityProvider);
 
-  // access roles
+  // access Static Web Apps roles
   const roles = userInfo.claimsPrincipalData.userRoles;
   context.log('isAuthenticated:', roles.indexOf('authenticated') >= 0);
 
