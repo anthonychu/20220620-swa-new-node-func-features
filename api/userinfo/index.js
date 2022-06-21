@@ -7,7 +7,7 @@ module.exports = async function (context, req) {
 
   // access basic information
   const { id, username, identityProvider } = userInfo;
-  context.log(`id: ${id}`);
+  context.log('id:', id);
   context.log('username:', username);
   context.log('identityProvider:', identityProvider);
 
