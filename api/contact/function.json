@@ -14,14 +14,6 @@
       "type": "http",
       "direction": "out",
       "name": "res"
-    },
-    {
-      "type": "blob",
-      "direction": "out",
-      "name": "outBlob",
-      "path": "outcontainer/{rand-guid}",
-      "connection": "STORAGE_CONNECTION_STRING",
-      "dataType": "binary"
     }
   ]
 }
